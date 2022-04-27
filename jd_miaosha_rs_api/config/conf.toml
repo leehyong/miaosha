@@ -1,0 +1,17 @@
+ip = "127.0.0.1"
+port = 48180
+workers = 3
+redis_uri = "redis://127.0.0.1:6379/5"
+db_uri = "mysql://root:12345678@localhost:3306/miaosha?useUnicode=true&characterEncoding=UTF-8&useSSL=false"
+
+white_mac_list = ["a4:5e:60:bf:57:e7"]
+
+# vip 登记所支持的账号数量:
+# vip0及其他： 5个
+# vip1： 30个
+# vip2： 50个
+# .
+# .
+# .
+# 以此类推，直到 450
+vip_level_users = [5, 30, 50, 100, 150, 200, 250, 300, 400, 500]

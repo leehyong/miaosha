@@ -1,0 +1,40 @@
+[package]
+name = "jd_miaosha_rs_api"
+version = "0.1.0"
+authors = ["lee.sen@qq.com"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+jsonwebtoken = "7"
+md5 = "0.7"
+toml = "0.5"
+tide = { version = "0.16", features = ["h1-server", "logger"] }
+async-std = { version = "1.9", features = ["attributes"] }
+redis = { version = "0.20", features = ["async-std-comp"] }
+rbatis = { version = "1.8", default-features = false, features = ["mysql", "async-io"] }
+chrono = { version = "0.4", features = ["serde"] }
+lazy_static = "1.4"
+log4rs = "1.0"
+log = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+validator = { git = "https://github.com/Keats/validator.git", rev="e39ec89f",features = ["derive"] }
+# 错误处理
+anyhow = "1.0"
+rand = "0.8"
+# 用来获取 mac 地址
+mac_address = "1.1.1"
+
+[dev-dependencies]
+surf = "2.2.0"
+
+[[test]]
+name = "user"
+path = "tests/user.rs"
+
+[[test]]
+name = "shopping_cart"
+path = "tests/shopping_cart.rs"

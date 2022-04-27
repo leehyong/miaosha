@@ -1,0 +1,2 @@
+addr = "http://127.0.0.1:48180"
+proxy_ip_pool_url = "http://webapi.http.zhimacangku.com/getip?num=1&type=1&pro=0&city=0&yys=100017&port=1&time=1&ts=0&ys=0&cs=0&lb=4&sb=0&pb=45&mr=2&regions=520000"

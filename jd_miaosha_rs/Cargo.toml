@@ -1,0 +1,39 @@
+[package]
+name = "jd_miaosha_rs"
+version = "0.1.0"
+authors = ["lihuayong <lihuayong@qq.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+toml = "0.5"
+http = "0.2.4"
+lazy_static = "1.4.0"
+url = { version = "2", features = ["serde"] }
+thirtyfour = "0.24"  # 启动 webdirver的
+log4rs = { version="1.0.0", features=["yaml_format", "config_parsing",  "file_appender", "rolling_file_appender", "compound_policy", "delete_roller", "fixed_window_roller", "size_trigger", "json_encoder", "pattern_encoder", "threshold_filter"]}
+log = "0.4.14"
+reqwest = { version = "0.11", features = ["json", "default-tls", "multipart", "cookies"] }
+tokio = { version = "1", features = ["full"] }
+num_cpus = "^1.0"
+futures = "0.3"
+serde = "1"
+async-trait = "0.1"
+#encoding = "0.2.33"
+scraper = "0.12.0"  # 解析html文本
+serde_json = "1.0"
+bytes = "1.0"
+chrono = {version = "0.4.19", features = ["serde"]}
+iced = {version = "0.3.0", features = ["debug", "image", "tokio", "wgpu"]} # GUI
+iced_native = "0.4"
+iced_wgpu = "0.4"
+# 错误处理
+thiserror = "1.0"
+# 错误处理
+anyhow = "1.0.40"
+rand = "0.8"
+
+# 用来获取 mac 地址
+mac_address = "1.1.1"
+jsonwebtoken = "7.2.0"
